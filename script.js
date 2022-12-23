@@ -10,7 +10,7 @@ button.addEventListener("click", ()=>{
     let creditos = document.getElementById("creditos").value
     let mais = document.getElementById("mais").value
 
-    let file = new File([`
+    let file = new Blob([`
         #Título 
         ${titulo}
 
@@ -38,7 +38,7 @@ button.addEventListener("click", ()=>{
         
 
         
-    `], 'README.md',{type:"text/plain"})
+    `], 'README.md',{type: "text/plain;charset=utf-8"})
     let url = window.URL.createObjectURL(file)
 
 
