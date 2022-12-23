@@ -18,10 +18,11 @@ label{
     margin: 16px 0 8px 0;
 }
 input, textarea, button{
-    padding: 8px;
+    padding: 12px 8px;
     border-radius: 10px;
     border: 1px solid rgb(202, 202, 202);
     outline: none;
+    font-size: 1rem;
 }
 input:focus, textarea:focus{
     border-color: black;
