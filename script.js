@@ -10,29 +10,43 @@ button.addEventListener("click", ()=>{
     let creditos = document.getElementById("creditos").value
     let mais = document.getElementById("mais").value
 
-    let file = new Blob([`
-        #Título 
+    let file = new File([`
+        <h1>Título</h1> 
         ${titulo}
+        </br>
+        </br>
 
-        ## Descrição
+        <h2>Descrição</h2>
         ${descricao}
+        </br>
+        </br>
 
-        ## instalação
+        <h2>instalação</h2>
         ${instalacao}
+        </br>
+        </br>
 
-        ## Modo de uso
+        <h2>Modo de uso</h2>
         ${uso}
+        </br>
+        </br>
 
-        ## ajude você tambêm
+        <h2>ajude você tambêm</h2>>
         ${contribuir}
+        </br>
+        </br>
 
-        ## Licença
+        <h2>Licença</h2>
         ${licenca}
+        </br>
+        </br>
 
-        ## Créditos
+        <h2>Créditos</h2>
         ${creditos}
+        </br>
+        </br>
 
-        ## Um pouco mais
+        <h2>Um pouco mais</h2>
         ${mais}
 
         
