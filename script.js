@@ -11,7 +11,7 @@ button.addEventListener("click", ()=>{
     let mais = document.getElementById("mais").value
 
     let blob = new File([`
-        # Título
+        # Título 
         ${titulo}
 
         ## Descrição
@@ -38,7 +38,7 @@ button.addEventListener("click", ()=>{
         
 
         
-    `], 'README.md',{type:"text/plain"})
+    `], 'README.MD',{type:"text/plain"})
     let url = window.URL.createObjectURL(blob)
 
 
