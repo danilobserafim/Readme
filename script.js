@@ -10,8 +10,8 @@ button.addEventListener("click", ()=>{
     let creditos = document.getElementById("creditos").value
     let mais = document.getElementById("mais").value
 
-    let blob = new File([`
-        # Título 
+    let file = new File([`
+        #Título 
         ${titulo}
 
         ## Descrição
@@ -38,13 +38,13 @@ button.addEventListener("click", ()=>{
         
 
         
-    `], 'README.MD',{type:"text/plain"})
-    let url = window.URL.createObjectURL(blob)
+    `], 'README.md',{type:"text/plain"})
+    let url = window.URL.createObjectURL(file)
 
 
     let a = document.createElement("a");
         a.href = url;
-        a.download = blob.name;
+        a.download = file.name;
         a.click();
         window.URL.revokeObjectURL(url);
 
