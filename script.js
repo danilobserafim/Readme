@@ -10,45 +10,7 @@ button.addEventListener("click", ()=>{
     let creditos = document.getElementById("creditos").value
     let mais = document.getElementById("mais").value
 
-    let file = new File([`<h1>Título</h1> 
-        ${titulo}
-        </br>
-        </br>
-
-        <h2>Descrição</h2>
-        ${descricao}
-        </br>
-        </br>
-
-        <h2>instalação</h2>
-        ${instalacao}
-        </br>
-        </br>
-
-        <h2>Modo de uso</h2>
-        ${uso}
-        </br>
-        </br>
-
-        <h2>ajude você tambêm</h2>>
-        ${contribuir}
-        </br>
-        </br>
-
-        <h2>Licença</h2>
-        ${licenca}
-        </br>
-        </br>
-
-        <h2>Créditos</h2>
-        ${creditos}
-        </br>
-        </br>
-
-        <h2>Um pouco mais</h2>
-        ${mais}
-
-    `], 'README.md',{type: "text/plain;charset=utf-8"})
+    let file = new File([`<h1>Título</h1> ${titulo} </br></br><h2>Descrição</h2> ${descricao}</br></br><h2>instalação</h2>${instalacao}</br></br><h2>Modo de uso</h2>${uso}</br></br><h2>ajude você tambêm</h2>>${contribuir}</br></br><h2>Licença</h2>${licenca}</br></br><h2>Créditos</h2>${creditos}</br></br><h2>Um pouco mais</h2>${mais}`], 'README.md',{type: "text/plain;charset=utf-8"})
     let url = window.URL.createObjectURL(file)
 
 
