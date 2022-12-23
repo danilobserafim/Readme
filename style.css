@@ -1,0 +1,40 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    margin:  64px auto;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+label{
+    margin: 16px 0 8px 0;
+}
+input, textarea, button{
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    outline: none;
+}
+input:focus, textarea:focus{
+    font-weight: 600;
+}
+input::placeholder, textarea::placeholder{
+    color: gray;
+}
+button{
+    margin-top: 32px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+button:hover{
+    filter: brightness(0.9);
+}
