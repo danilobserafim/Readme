@@ -13,15 +13,15 @@ button.addEventListener("click", ()=>{
     let file = new File([`<h1>${titulo}</h1>
     <p>${descricao}</p></br>
     <h2>instalação</h2>
-    <p>${instalacao}</p></br>
+    <p>${instalacao}</p>
     <h2>Modo de uso</h2>
-    <p>${uso}</p></br>
+    <p>${uso}</p>
     <h2>ajude você tambêm</h2>
-    <p>${contribuir}</p></br>
+    <p>${contribuir}</p>
     <h2>Licença</h2>
-    <p>${licenca}</p></br>
+    <p>${licenca}</p>
     <h2>Créditos</h2>
-    <p>${creditos}</p></br>
+    <p>${creditos}</p>
     <h2>Um pouco mais</h2>
     <p>${mais}</p>`], 'README.md',{type: "text/plain;charset=utf-8"})
     let url = window.URL.createObjectURL(file)
