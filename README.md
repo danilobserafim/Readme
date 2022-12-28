@@ -1,7 +1,7 @@
 <h1>Gerador README.md</h1>
-    <p>O titulo já diz tudo!</p>
+    <p>O titulo já diz tudo!</p></br>
     <h2>instalação</h2>
-    <p>é só acesar <a href='https://danilobserafim.github.io/readme/'>link</a></p>
+    <p>É só acesar <a href='https://danilobserafim.github.io/readme/'>link</a></p>
     <h2>Modo de uso</h2>
     <p>A página contem um formulário para ser preencido com as informações da documentação do projeto.</p>
     <h2>ajude você tambêm</h2>

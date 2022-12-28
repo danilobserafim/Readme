@@ -11,7 +11,7 @@ button.addEventListener("click", ()=>{
     let mais = document.getElementById("mais").value
 
     let file = new File([`<h1>${titulo}</h1>
-    <p>${descricao}</p>
+    <p>${descricao}</p></br>
     <h2>instalação</h2>
     <p>${instalacao}</p>
     <h2>Modo de uso</h2>
