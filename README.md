@@ -1,8 +1,8 @@
-<img src='./assets/readme/banner.jpg' alt="Banner" width='100%'/>
 <h1>Gerador README.md</h1>
     <p>O título já diz bastante coisa,
 mas é uma solução incrível!
 </p></br>
+<img src='./assets/readme/banner.jpg' alt="Banner" width='100%'/>
     <h2>instalação</h2>
     <p>É só acesar <a href="https://danilobserafim.github.io/readme/" target="_blank">link</a></p>
     <h2>Modo de uso</h2>
