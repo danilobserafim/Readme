@@ -1,3 +1,4 @@
+<img src='./assets/readme/banner.jpg' alt="Banner" width='100%'/>
 <h1>Gerador README.md</h1>
     <p>O título já diz bastante coisa,
 mas é uma solução incrível!

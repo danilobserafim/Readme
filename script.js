@@ -4,7 +4,9 @@ function separaLinhas(dado) {
     return dado.replaceAll('\n', '</br>\n')
 }
 
+
 button.addEventListener("click", ()=>{
+    let banner = document.getElementById("banner").value
     let titulo = document.getElementById("titulo").value
     let descricao = document.getElementById("descricao").value
     let instalacao = document.getElementById("instalacao").value
@@ -15,6 +17,7 @@ button.addEventListener("click", ()=>{
     let mais = document.getElementById("mais").value
 
     let file = new File([`<h1>${titulo}</h1>
+    <img src='${banner}' alt="Banner" width='100%'/>
     <p>${separaLinhas(descricao)}</p></br>
 
     <h2>instalação</h2>
@@ -42,7 +45,6 @@ button.addEventListener("click", ()=>{
         a.download = file.name;
         a.click();
         window.URL.revokeObjectURL(url);
-
 
 
     
