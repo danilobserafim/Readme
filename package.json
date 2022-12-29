@@ -1,0 +1,23 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "description": "Gerador README.md",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilobserafim/Readme.git"
+  },
+  "keywords": [
+    "readme",
+    "documentation"
+  ],
+  "author": "Danilo B. Serafim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danilobserafim/Readme/issues"
+  },
+  "homepage": "https://github.com/danilobserafim/Readme#readme"
+}
