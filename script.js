@@ -2,20 +2,22 @@ const button = document.getElementById("btnGerar")
 const inputTitulo = document.getElementById("titulo")
 const inputDescricao = document.getElementById("descricao")
 const alert = document.getElementById("alert")
+const info = document.getElementById("info")
 
 function change() {
     inputDescricao.style.borderColor = "gray"
-    inputDescricao.style.borderWidth = '1px'
 
     inputTitulo.style.borderColor = "gray"
-    inputTitulo.style.borderWidth = '1px'
 
-    alert.style.opacity = 0
+    alert.style.display = 'none'
+    info.style.display = 'block'
 
 }
 
 function separaLinhas(dado) {
-    return dado.replaceAll('\n', '</br>\n    ')
+    let retorno = dado.replaceAll('\n', '</br>\n    ')
+    let finalRetorno = retorno.replaceAll('.', '•')
+    return finalRetorno
 }
 
 
@@ -30,19 +32,26 @@ button.addEventListener("click", ()=>{
     let licenca = document.getElementById("licenca").value
     let creditos = document.getElementById("creditos").value
     let mais = document.getElementById("mais").value
-
+    
     if (!titulo || !descricao) {
-        alert.style.opacity = 1
+
+        window.scrollTo(0,0)
+        alert.style.display = 'block'
+        info.style.display = 'none'
+
         if (!descricao) {
-            inputDescricao.style.borderWidth = '2px'
+            inputDescricao.focus()
             inputDescricao.style.borderColor = 'red'
         }
         if (!titulo) {
-            inputTitulo.style.borderWidth = '2px'
+            inputTitulo.focus()
             inputTitulo.style.borderColor = 'red'
         }
         return
     }
+
+    
+
     
 
     let file = new File([`    <h1>${titulo}</h1>
