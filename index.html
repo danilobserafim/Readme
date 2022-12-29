@@ -22,22 +22,42 @@
         <textarea name="descricao" id="descricao" placeholder="Faça uma breve descrição do seu projeto"></textarea>
 
         <label for="instalacao">Como instalar</label>
-        <input name="instalacao" id="instalacao" placeholder="Quais os comandos utilizados para instalação do projeto?"></input>
+        <textarea name="instalacao" id="instalacao" placeholder="Quais os comandos utilizados para instalação do projeto?"></textarea>
 
-        <label for="uso">Como usar</label>
-        <input name="uso" id="uso" placeholder="fazer login ou acessar o dashboard são exemplos"></input>
 
-        <label for="contribuir">Como contribuir</label>    
-        <input name="contribuir" id="contribuir" placeholder="Como contribuir"></input>
+        <div class="divMenor">
+            <div class="menor">
+                <label for="uso" >Como usar</label>
+                <textarea name="uso" id="uso" placeholder="fazer login ou acessar o dashboard são exemplos"></textarea>
 
+        </div>
+        <div class="menor">
+
+            <label for="contribuir">Como contribuir</label>    
+            <textarea name="contribuir" id="contribuir" placeholder="Como contribuir"></textarea>
+        </div>
+
+        </div>
+
+        
         <label for="licenca">Licença</label>    
         <input name="licenca" id="licenca" placeholder="Licença"></input>
+        
+        
+        <div class="divMenor">
+        <div class="menor">
+            <label for="creditos">Créditos</label>    
+            <textarea name="creditos" id="creditos" placeholder="Créditos"></textarea>
+        
+        </div>
+        <div class="menor">
+            <label for="mais">Mais...</label>    
+            <textarea name="mais" id="mais" placeholder="Mais..."></textarea>
+        
+        </div>
+        </div>
 
-        <label for="creditos">Créditos</label>    
-        <input name="creditos" id="creditos" placeholder="Créditos"></input>
 
-        <label for="mais">Mais...</label>    
-        <input name="mais" id="mais" placeholder="Mais..."></input>
 
         <button id="btnGerar">Gerar</button>
     </div>

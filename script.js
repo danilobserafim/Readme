@@ -1,5 +1,9 @@
 const button = document.getElementById("btnGerar")
 
+function separaLinhas(dado) {
+    return dado.replaceAll('\n', '</br>\n')
+}
+
 button.addEventListener("click", ()=>{
     let titulo = document.getElementById("titulo").value
     let descricao = document.getElementById("descricao").value
@@ -11,19 +15,25 @@ button.addEventListener("click", ()=>{
     let mais = document.getElementById("mais").value
 
     let file = new File([`<h1>${titulo}</h1>
-    <p>${descricao}</p></br>
+    <p>${separaLinhas(descricao)}</p></br>
+
     <h2>instalação</h2>
-    <p>${instalacao}</p>
+    <p>${separaLinhas(instalacao)}</p>
+
     <h2>Modo de uso</h2>
-    <p>${uso}</p>
+    <p>${separaLinhas(uso)}</p>
+
     <h2>ajude você tambêm</h2>
-    <p>${contribuir}</p>
+    <p>${separaLinhas(contribuir)}</p>
+
     <h2>Licença</h2>
     <p>${licenca}</p>
+
     <h2>Créditos</h2>
-    <p>${creditos}</p>
+    <p>${separaLinhas(creditos)}</p>
+
     <h2>Um pouco mais</h2>
-    <p>${mais}</p>`], 'README.md',{type: "text/plain;charset=utf-8"})
+    <p>${separaLinhas(mais)}</p>`], 'README.md',{type: "text/plain;charset=utf-8"})
     let url = window.URL.createObjectURL(file)
 
 

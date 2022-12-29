@@ -11,19 +11,28 @@ h1{
 #form{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 label{
     margin: 16px 0 8px 4px;
     font-weight: 600;
 }
+.divMenor{
+    display: flex;
+    justify-content: space-between;
+}
+.menor{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+}
 input, textarea, button{
     padding: 12px 8px;
     border-radius: 10px;
     border: 1px solid rgb(202, 202, 202);
     outline: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 input:focus, textarea:focus{
     border-color: black;
