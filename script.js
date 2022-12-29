@@ -15,8 +15,8 @@ function change() {
 }
 
 function separaLinhas(dado) {
-    let retorno = dado.replaceAll('\n', '</br>\n    ')
-    let finalRetorno = retorno.replaceAll('.', '•')
+    let retorno = dado.replaceAll('\n', '\n</br>')
+    let finalRetorno = retorno.replaceAll('. ', '• ')
     return finalRetorno
 }
 
@@ -54,8 +54,8 @@ button.addEventListener("click", ()=>{
 
     
 
-    let file = new File([`    <h1>${titulo}</h1>
-    <p>${separaLinhas(descricao)}</p></br>
+    let file = new File([`<h1>${titulo}</h1>
+    <p>${separaLinhas(descricao)}</p>
     ${banner && `<img src='${banner}' alt="Banner" width='100%'/>`}
 
     ${instalacao && `<h2>instalação</h2>
