@@ -41,6 +41,16 @@ input:focus, textarea:focus{
 input::placeholder, textarea::placeholder{
     color: gray;
 }
+small{
+    opacity: 0;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding: 4px 8px;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: 0.8s;
+    width: max-content;
+}
 button{
     margin-top: 32px;
     color: white;
