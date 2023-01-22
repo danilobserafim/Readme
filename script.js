@@ -9,15 +9,15 @@ function change() {
 
     inputTitulo.style.borderColor = "gray"
 
-    alert.style.display = 'none'
+    alert.style.display = 'none' 
     info.style.display = 'block'
 
 }
 
 function separaLinhas(dado) {
-    let retorno = dado.replaceAll('\n', '\n</br>')
-    let finalRetorno = retorno.replaceAll('. ', '• ')
-    return finalRetorno
+    let tratamento = dado.replaceAll('\n', '\n</br>')
+    let resposta = tratamento.replaceAll('. ', '• ')
+    return resposta
 }
 
 
