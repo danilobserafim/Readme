@@ -15,7 +15,7 @@ function change() {
 }
 
 function separaLinhas(dado) {
-    let tratamento = dado.replaceAll('\n', '\n</br>')
+    let tratamento = dado.replaceAll('\n', '</br>\n')
     let resposta = tratamento.replaceAll('. ', '• ')
     return resposta
 }
