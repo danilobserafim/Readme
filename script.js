@@ -64,7 +64,7 @@ button.addEventListener("click", ()=>{
     ${uso && `<h2>Modo de uso</h2>
     <p>${separaLinhas(uso)}</p>`}
 
-    ${tecnologias && `<h2>Técnologias</h2>
+    ${tecnologias && `<h2>Tecnologías</h2>
     <p>${separaLinhas(tecnologias)}</p>`}
 
     ${contribuir && `<h2>ajude você também</h2>

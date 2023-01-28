@@ -1,6 +1,9 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+body{
+    padding: 32px 0;
+}
 
 h1{
     text-align: center;
