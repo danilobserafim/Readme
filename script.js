@@ -58,7 +58,7 @@ button.addEventListener("click", ()=>{
     <p>${separaLinhas(descricao)}</p>
     ${banner && `<img src='${banner}' alt="Banner" width='100%'/>`}
 
-    ${instalacao && `<h2>instalação</h2>
+    ${instalacao && `<h2>Instalação</h2>
     <p>${separaLinhas(instalacao)}</p>`}
 
     ${uso && `<h2>Modo de uso</h2>
@@ -67,7 +67,7 @@ button.addEventListener("click", ()=>{
     ${tecnologias && `<h2>Tecnologías</h2>
     <p>${separaLinhas(tecnologias)}</p>`}
 
-    ${contribuir && `<h2>ajude você também</h2>
+    ${contribuir && `<h2>Ajude você também</h2>
     <p>${separaLinhas(contribuir)}</p>`}
 
     ${licenca && `<h2>Licença</h2>
@@ -78,9 +78,9 @@ button.addEventListener("click", ()=>{
 
     ${mais && `<h2>Um pouco mais</h2>
     <p>${separaLinhas(mais)}</p>`}`], 'README.md',{type: "text/plain;charset=utf-8"})
+
+
     let url = window.URL.createObjectURL(file)
-
-
     let a = document.createElement("a");
         a.href = url;
         a.download = file.name;
