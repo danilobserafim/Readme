@@ -15,7 +15,7 @@ function change() {
 }
 
 function separaLinhas(dado) {
-    let tratamento = dado.replaceAll('\n', '</br>\n')
+    let tratamento = dado.replaceAll('\n', '  \n')
     let resposta = tratamento.replaceAll('. ', '• ')
     return resposta
 }
@@ -54,38 +54,43 @@ button.addEventListener("click", ()=>{
 
     
 
-    let file = new File([`<h1>${titulo}</h1>
-    <p>${separaLinhas(descricao)}</p>
-    ${banner && `<img src='${banner}' alt="Banner" width='100%'/>`}
+    let file = new File([`
+# ${titulo}
 
-    ${instalacao && `<h2>Instalação</h2>
-    <p>${separaLinhas(instalacao)}</p>`}
+${separaLinhas(descricao)}
 
-    ${uso && `<h2>Modo de uso</h2>
-    <p>${separaLinhas(uso)}</p>`}
+${banner && `![Banner](${banner})`}
 
-    ${tecnologias && `<h2>Tecnologías</h2>
-    <p>${separaLinhas(tecnologias)}</p>`}
+${instalacao && `## Instalação
+${separaLinhas(instalacao)}`}
 
-    ${contribuir && `<h2>Ajude você também</h2>
-    <p>${separaLinhas(contribuir)}</p>`}
+${uso && `## Modo de uso
+${separaLinhas(uso)}`}
 
-    ${licenca && `<h2>Licença</h2>
-    <p>${licenca}</p>`}
+${tecnologias && `## Tecnologías
+${separaLinhas(tecnologias)}`}
 
-    ${creditos && `<h2>Créditos</h2>
-    <p>${separaLinhas(creditos)}</p>`}
+${contribuir && `## Ajude você também
+${separaLinhas(contribuir)}`}
 
-    ${mais && `<h2>Um pouco mais</h2>
-    <p>${separaLinhas(mais)}</p>`}`], 'README.md',{type: "text/plain;charset=utf-8"})
+${licenca && `## Licença
+${licenca}`}
+
+${creditos && `## Créditos
+${separaLinhas(creditos)}`}
+
+${mais && `## Um pouco mais
+${separaLinhas(mais)}`}`],
+ 'README.md',
+ {type: "text/plain;charset=utf-8"})
 
 
-    let url = window.URL.createObjectURL(file)
-    let a = document.createElement("a");
-        a.href = url;
-        a.download = file.name;
-        a.click();
-        window.URL.revokeObjectURL(url);
+let url = window.URL.createObjectURL(file)
+let a = document.createElement("a");
+a.href = url;
+a.download = file.name;
+a.click();
+window.URL.revokeObjectURL(url);
 
 
     
